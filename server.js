@@ -12,8 +12,5 @@ var io = socket(server);
 io.sockets.on('connection', newConnection); //checking if there is a new connection
 
 function newConnection(socket) {
-  console.log('new connection')
-console.log(socket)
-
-
+  console.log('new connection: ' + socket.id);
 }
